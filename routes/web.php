@@ -26,6 +26,6 @@ Route::middleware('auth')
 ->namespace('Admin')
 ->name('admin.')
 ->group(function(){
-    Route::get('/home', 'HomeController@index')->name('dashboard');
+    Route::get('/', 'HomeController@index')->name('dashboard');
 
 });
